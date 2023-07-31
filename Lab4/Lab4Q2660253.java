@@ -1,6 +1,6 @@
 public class Lab4Q2660253 {
     public static void main(String[] args) {
-        int data[] = {0, 0, 0};
+        int data[] = new int[3];
         int idx = 0;
         int min = 0;
         int sum = 0;
