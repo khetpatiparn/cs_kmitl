@@ -1,7 +1,6 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class test{
+public class Lab6Q1_660253{
     public static void main(String [] args){
         Scanner sc = new Scanner(System.in);
         int input = sc.nextInt(); // 12
@@ -23,7 +22,3 @@ public class test{
         sc.close();
     }
 }
-
-// line 1 : get num
-// line 2 : get array not work
-// line 2 : get num each for
