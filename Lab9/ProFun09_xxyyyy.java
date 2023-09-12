@@ -118,7 +118,7 @@ public class ProFun09_xxyyyy {
         int[][] map2 = new int[map.length][map[0].length];
         int row = 0;
         int col = 0;
-        initialMap2(map, map2);
+        initialMap2(map, map2);// copy map => map2
         markTheBomb(map2);
         for (row = 0; row < map2.length; row++) {
             System.out.println(Arrays.toString(map[row]) + "\t" + Arrays.toString(map2[row]));
@@ -137,5 +137,15 @@ public class ProFun09_xxyyyy {
 
     static void markTheBomb(int[][] map2) {
         /* your code */
+        int bomb = 9;
+        for (int row = 0; row < map2.length; row++){
+            for(int col = 0; col < map2[0].length - 1; col++){
+                // consider each row
+                if (map2[row][col + 1] == bomb){
+                    map2[row][col] += 1;
+                }
+            }
+        }
+
     }
 }
