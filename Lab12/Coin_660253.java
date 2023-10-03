@@ -33,9 +33,8 @@ public class Coin_660253 {
     // Overloading
     void hit(Coin_660253 c1, Coin_660253 c2){
         if (!(this.equals(c1) || this.equals(c2)) && (!(c1.equals(c2)))){
-            System.out.println("Coin with tailColor = " + tailColor + " hits me.");
             c1.flip();
-            System.out.println("Coin with tailColor = " + tailColor + " hits me.");
+            this.flip();
             c2.flip();
             this.flip();
         }else{
